@@ -1,8 +1,8 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
 export function Hero() {
-  const [displayedText, setDisplayedText] = useState('');
-  const fullText = 'SYUHEI176';
+  const [displayedText, setDisplayedText] = useState("");
+  const fullText = "SYUHEI176";
   const [cursorVisible, setCursorVisible] = useState(true);
 
   useEffect(() => {
@@ -21,7 +21,7 @@ export function Hero() {
 
   useEffect(() => {
     const cursorInterval = setInterval(() => {
-      setCursorVisible(prev => !prev);
+      setCursorVisible((prev) => !prev);
     }, 500);
 
     return () => clearInterval(cursorInterval);
@@ -46,18 +46,28 @@ export function Hero() {
 
               <h1 className="pixel-text text-4xl md:text-6xl lg:text-7xl mb-6 glow-text text-purple-400">
                 {displayedText}
-                <span className={`${cursorVisible ? 'opacity-100' : 'opacity-0'}`}>_</span>
+                <span
+                  className={`${cursorVisible ? "opacity-100" : "opacity-0"}`}
+                >
+                  _
+                </span>
               </h1>
 
               <div className="mono-text text-2xl md:text-3xl lg:text-4xl mb-8 text-cyan-400">
-                <p className="mb-2">{'>'} GAME DEVELOPER</p>
-                <p className="mb-2">{'>'} GRAPHICS ENGINEER</p>
-                <p>{'>'} CREATIVE CODER</p>
+                <p className="mb-2">{">"} BLOCKCHAIN ENGINEER</p>
+                <p className="mb-2">{">"} CREATIVE CODER</p>
+                <p>{">"} GAME PLAYER</p>
               </div>
 
               <div className="mono-text text-xl md:text-2xl text-gray-400 mb-12 max-w-2xl">
-                <p>Building interactive experiences with Lua, TypeScript, WebGL, and Three.js.</p>
-                <p className="mt-2">Specializing in game engines, voxel graphics, and web-based simulations.</p>
+                <p>
+                  Building interactive experiences with Lua, TypeScript, WebGL,
+                  and Three.js.
+                </p>
+                <p className="mt-2">
+                  Specializing in game engines, voxel graphics, and web-based
+                  simulations.
+                </p>
               </div>
 
               <div className="flex flex-wrap gap-4">
@@ -66,7 +76,9 @@ export function Hero() {
                   className="game-button text-xs md:text-sm"
                   onClick={(e) => {
                     e.preventDefault();
-                    document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
+                    document
+                      .getElementById("projects")
+                      ?.scrollIntoView({ behavior: "smooth" });
                   }}
                 >
                   View Projects
@@ -83,17 +95,19 @@ export function Hero() {
 
               <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4">
                 {[
-                  { label: 'LUA', color: 'text-purple-400' },
-                  { label: 'WEBGL', color: 'text-cyan-400' },
-                  { label: 'THREE.JS', color: 'text-pink-400' },
-                  { label: 'TYPESCRIPT', color: 'text-yellow-400' },
+                  { label: "LUA", color: "text-purple-400" },
+                  { label: "WEBGL", color: "text-cyan-400" },
+                  { label: "THREE.JS", color: "text-pink-400" },
+                  { label: "TYPESCRIPT", color: "text-yellow-400" },
                 ].map((tech, index) => (
                   <div
                     key={tech.label}
                     className="crt-screen p-4 border-2 border-gray-700"
                     style={{ animationDelay: `${index * 0.1}s` }}
                   >
-                    <div className={`pixel-text text-xs ${tech.color} text-center`}>
+                    <div
+                      className={`pixel-text text-xs ${tech.color} text-center`}
+                    >
                       {tech.label}
                     </div>
                   </div>

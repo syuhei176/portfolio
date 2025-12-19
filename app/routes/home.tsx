@@ -4,8 +4,12 @@ import { ProjectCard } from "../components/ProjectCard";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "syuhei176 - Game Developer & Graphics Engineer" },
-    { name: "description", content: "Portfolio of syuhei176 - Game developer specializing in Lua, WebGL, Three.js, and interactive experiences." },
+    { title: "syuhei176 - blockchain engineer & creative coder & Game Player" },
+    {
+      name: "description",
+      content:
+        "Portfolio of syuhei176 - blockchain engineer & creative coder & Game Player.",
+    },
   ];
 }
 
@@ -86,7 +90,7 @@ export default function Home() {
               </h3>
               <div className="mono-text text-lg md:text-xl space-y-2">
                 <div className="flex items-center gap-3">
-                  <span className="text-cyan-400">{'>'}</span>
+                  <span className="text-cyan-400">{">"}</span>
                   <a
                     href="https://github.com/syuhei176"
                     target="_blank"
@@ -97,7 +101,7 @@ export default function Home() {
                   </a>
                 </div>
                 <div className="flex items-center gap-3">
-                  <span className="text-pink-400">{'>'}</span>
+                  <span className="text-pink-400">{">"}</span>
                   <a
                     href="https://x.com/syuhei176"
                     target="_blank"
