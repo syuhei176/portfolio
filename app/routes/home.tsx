@@ -42,6 +42,13 @@ const projects = [
     link: "https://syuhei176.github.io/city-simulator/",
     colorScheme: "green" as const,
   },
+  {
+    title: "Ocean Wave",
+    description: "Realistic ocean wave simulation with Gerstner waves and SSS",
+    technologies: ["Three.js", "GLSL"],
+    link: "/wave",
+    colorScheme: "cyan" as const,
+  },
 ];
 
 export default function Home() {
