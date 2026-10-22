@@ -1,32 +1,9 @@
-import { useState, useEffect } from "react";
+function scrollToSection(e: React.MouseEvent<HTMLAnchorElement>, id: string) {
+  e.preventDefault();
+  document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+}
 
 export function Hero() {
-  const [displayedText, setDisplayedText] = useState("");
-  const fullText = "SYUHEI176";
-  const [cursorVisible, setCursorVisible] = useState(true);
-
-  useEffect(() => {
-    let currentIndex = 0;
-    const typingInterval = setInterval(() => {
-      if (currentIndex <= fullText.length) {
-        setDisplayedText(fullText.slice(0, currentIndex));
-        currentIndex++;
-      } else {
-        clearInterval(typingInterval);
-      }
-    }, 150);
-
-    return () => clearInterval(typingInterval);
-  }, []);
-
-  useEffect(() => {
-    const cursorInterval = setInterval(() => {
-      setCursorVisible((prev) => !prev);
-    }, 500);
-
-    return () => clearInterval(cursorInterval);
-  }, []);
-
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden scanline-effect">
       <div className="absolute inset-0 opacity-20">
@@ -44,12 +21,14 @@ export function Hero() {
                 </div>
               </div>
 
-              <h1 className="pixel-text text-4xl md:text-6xl lg:text-7xl mb-6 glow-text text-purple-400">
-                {displayedText}
-                <span
-                  className={`${cursorVisible ? "opacity-100" : "opacity-0"}`}
-                >
-                  _
+              <h1 className="mb-8">
+                <span className="block pixel-text text-4xl md:text-6xl lg:text-7xl glow-text text-purple-400">
+                  <span className="typing">SYUHEI176</span>
+                  <span className="cursor-blink">_</span>
+                </span>
+                <span className="block jp-text text-2xl md:text-4xl mt-6 text-white">
+                  部谷 修平{" "}
+                  <span className="text-gray-400">/ Shuhei Hiya</span>
                 </span>
               </h1>
 
@@ -72,14 +51,16 @@ export function Hero() {
 
               <div className="flex flex-wrap gap-4">
                 <a
+                  href="#profile"
+                  className="game-button text-xs md:text-sm"
+                  onClick={(e) => scrollToSection(e, "profile")}
+                >
+                  Profile
+                </a>
+                <a
                   href="#projects"
                   className="game-button text-xs md:text-sm"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    document
-                      .getElementById("projects")
-                      ?.scrollIntoView({ behavior: "smooth" });
-                  }}
+                  onClick={(e) => scrollToSection(e, "projects")}
                 >
                   View Projects
                 </a>
