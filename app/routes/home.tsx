@@ -80,7 +80,7 @@ const projects = [
 ];
 
 const archive = [
-  { title: "WebGL Voxel Demo", link: "/world/webgl.html" },
+  { title: "WebGL Voxel Demo", link: "/world/webgl" },
   { title: "FLOWer", link: "https://flower-lang.github.io/" },
   { title: "Reversi", link: "https://syuhei176.github.io/reversi-game/" },
 ];
