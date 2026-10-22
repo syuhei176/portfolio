@@ -81,6 +81,41 @@ body {
   letter-spacing: 0.05em;
 }
 
+/* Press Start 2P / VT323 have no Japanese glyphs */
+.jp-text {
+  font-family: 'DotGothic16', sans-serif;
+  letter-spacing: 0.02em;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 9ch;
+  }
+}
+
+/* CSS typing keeps the full title in the server-rendered HTML */
+.typing {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  vertical-align: bottom;
+  animation: typing 1.35s steps(9) 0.2s both;
+}
+
+.cursor-blink {
+  animation: blink 1s infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .typing,
+  .cursor-blink {
+    animation: none;
+  }
+}
+
 .scanline-effect::before {
   content: '';
   position: fixed;
