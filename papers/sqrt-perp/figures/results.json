@@ -1,0 +1,274 @@
+{
+  "sigma": 0.8,
+  "swap_fee": 0.0005,
+  "funding_rate_theory": 0.08000000000000002,
+  "funding_check": {
+    "mc_mean": 0.9232535289420075,
+    "mc_se": 0.00027171990206477234,
+    "theory": 0.9231163463866358
+  },
+  "max_abs_errors": {
+    "prop1": 0.0,
+    "prop2": 0.0,
+    "prop3": 2.3879552848993235e-16
+  },
+  "rows": [
+    {
+      "dt_minutes": 1,
+      "h": 0.02,
+      "theta": 0.004,
+      "n_paths": 400,
+      "rolls_per_year": 2308.7575,
+      "out_share": 6.497001092579018e-05,
+      "surplus_pct_per_year": 1.8345736293761427e-07,
+      "notional_per_year": 8.67650990033096e-06,
+      "net_pct_per_year": -2.5036813207893366e-07,
+      "errors": {
+        "prop1": 0.0,
+        "prop2": 0.0,
+        "prop3": 1.6402947375481828e-16
+      }
+    },
+    {
+      "dt_minutes": 1,
+      "h": 0.05,
+      "theta": 0.01,
+      "n_paths": 400,
+      "rolls_per_year": 387.445,
+      "out_share": 0.0,
+      "surplus_pct_per_year": 0.0,
+      "notional_per_year": 0.0,
+      "net_pct_per_year": 0.0,
+      "errors": {
+        "prop1": 0.0,
+        "prop2": 0.0,
+        "prop3": 0.0
+      }
+    },
+    {
+      "dt_minutes": 1,
+      "h": 0.1,
+      "theta": 0.02,
+      "n_paths": 400,
+      "rolls_per_year": 98.3225,
+      "out_share": 0.0,
+      "surplus_pct_per_year": 0.0,
+      "notional_per_year": 0.0,
+      "net_pct_per_year": 0.0,
+      "errors": {
+        "prop1": 0.0,
+        "prop2": 0.0,
+        "prop3": 0.0
+      }
+    },
+    {
+      "dt_minutes": 1,
+      "h": 0.2,
+      "theta": 0.04,
+      "n_paths": 400,
+      "rolls_per_year": 24.5825,
+      "out_share": 0.0,
+      "surplus_pct_per_year": 0.0,
+      "notional_per_year": 0.0,
+      "net_pct_per_year": 0.0,
+      "errors": {
+        "prop1": 0.0,
+        "prop2": 0.0,
+        "prop3": 0.0
+      }
+    },
+    {
+      "dt_minutes": 10,
+      "h": 0.02,
+      "theta": 0.004,
+      "n_paths": 400,
+      "rolls_per_year": 1947.41,
+      "out_share": 0.13406652939031843,
+      "surplus_pct_per_year": 0.012439657000262085,
+      "notional_per_year": 0.09456895827565294,
+      "net_pct_per_year": 0.007711209086479437,
+      "errors": {
+        "prop1": 0.0,
+        "prop2": 0.0,
+        "prop3": 2.0952167216332087e-16
+      }
+    },
+    {
+      "dt_minutes": 10,
+      "h": 0.05,
+      "theta": 0.01,
+      "n_paths": 400,
+      "rolls_per_year": 359.975,
+      "out_share": 0.0010278491561914022,
+      "surplus_pct_per_year": 1.0173793034918112e-05,
+      "notional_per_year": 9.252570454961213e-05,
+      "net_pct_per_year": 5.547507807437506e-06,
+      "errors": {
+        "prop1": 0.0,
+        "prop2": 0.0,
+        "prop3": 1.6742098540381838e-16
+      }
+    },
+    {
+      "dt_minutes": 10,
+      "h": 0.1,
+      "theta": 0.02,
+      "n_paths": 400,
+      "rolls_per_year": 95.0925,
+      "out_share": 0.0,
+      "surplus_pct_per_year": 0.0,
+      "notional_per_year": 0.0,
+      "net_pct_per_year": 0.0,
+      "errors": {
+        "prop1": 0.0,
+        "prop2": 0.0,
+        "prop3": 0.0
+      }
+    },
+    {
+      "dt_minutes": 10,
+      "h": 0.2,
+      "theta": 0.04,
+      "n_paths": 400,
+      "rolls_per_year": 24.5225,
+      "out_share": 0.0,
+      "surplus_pct_per_year": 0.0,
+      "notional_per_year": 0.0,
+      "net_pct_per_year": 0.0,
+      "errors": {
+        "prop1": 0.0,
+        "prop2": 0.0,
+        "prop3": 0.0
+      }
+    },
+    {
+      "dt_minutes": 60,
+      "h": 0.02,
+      "theta": 0.004,
+      "n_paths": 400,
+      "rolls_per_year": 1395.765,
+      "out_share": 0.48523390398813554,
+      "surplus_pct_per_year": 0.2806567743279379,
+      "notional_per_year": 0.7324435383274528,
+      "net_pct_per_year": 0.24403459741156533,
+      "errors": {
+        "prop1": 0.0,
+        "prop2": 0.0,
+        "prop3": 2.333241191671432e-16
+      }
+    },
+    {
+      "dt_minutes": 60,
+      "h": 0.05,
+      "theta": 0.01,
+      "n_paths": 400,
+      "rolls_per_year": 312.4625,
+      "out_share": 0.12779933592031043,
+      "surplus_pct_per_year": 0.011391163285003447,
+      "notional_per_year": 0.035269660454426234,
+      "net_pct_per_year": 0.009627680262282135,
+      "errors": {
+        "prop1": 0.0,
+        "prop2": 0.0,
+        "prop3": 2.0107206915101483e-16
+      }
+    },
+    {
+      "dt_minutes": 60,
+      "h": 0.1,
+      "theta": 0.02,
+      "n_paths": 400,
+      "rolls_per_year": 88.0675,
+      "out_share": 0.006529082805802368,
+      "surplus_pct_per_year": 7.250706501774062e-05,
+      "notional_per_year": 0.00034030057453237933,
+      "net_pct_per_year": 5.549203629112166e-05,
+      "errors": {
+        "prop1": 0.0,
+        "prop2": 0.0,
+        "prop3": 1.863928624436447e-16
+      }
+    },
+    {
+      "dt_minutes": 60,
+      "h": 0.2,
+      "theta": 0.04,
+      "n_paths": 400,
+      "rolls_per_year": 23.3275,
+      "out_share": 0.0,
+      "surplus_pct_per_year": 0.0,
+      "notional_per_year": 0.0,
+      "net_pct_per_year": 0.0,
+      "errors": {
+        "prop1": 0.0,
+        "prop2": 0.0,
+        "prop3": 0.0
+      }
+    },
+    {
+      "dt_minutes": 1440,
+      "h": 0.02,
+      "theta": 0.004,
+      "n_paths": 400,
+      "rolls_per_year": 256.735,
+      "out_share": 0.9020390675209847,
+      "surplus_pct_per_year": 3.6230745382991403,
+      "notional_per_year": 1.5936533318778066,
+      "net_pct_per_year": 3.5433918717052504,
+      "errors": {
+        "prop1": 0.0,
+        "prop2": 0.0,
+        "prop3": 2.3879552848993235e-16
+      }
+    },
+    {
+      "dt_minutes": 1440,
+      "h": 0.05,
+      "theta": 0.01,
+      "n_paths": 400,
+      "rolls_per_year": 137.9925,
+      "out_share": 0.7169049042520427,
+      "surplus_pct_per_year": 1.138394407759972,
+      "notional_per_year": 0.5691744381089459,
+      "net_pct_per_year": 1.1099356858545244,
+      "errors": {
+        "prop1": 0.0,
+        "prop2": 0.0,
+        "prop3": 2.1937475707528575e-16
+      }
+    },
+    {
+      "dt_minutes": 1440,
+      "h": 0.1,
+      "theta": 0.02,
+      "n_paths": 400,
+      "rolls_per_year": 56.3625,
+      "out_share": 0.48130405854956754,
+      "surplus_pct_per_year": 0.2746042065646895,
+      "notional_per_year": 0.1449708281086778,
+      "net_pct_per_year": 0.2673556651592556,
+      "errors": {
+        "prop1": 0.0,
+        "prop2": 0.0,
+        "prop3": 2.090612839095174e-16
+      }
+    },
+    {
+      "dt_minutes": 1440,
+      "h": 0.2,
+      "theta": 0.04,
+      "n_paths": 400,
+      "rolls_per_year": 18.5,
+      "out_share": 0.19986486486486488,
+      "surplus_pct_per_year": 0.028241682833393088,
+      "notional_per_year": 0.016803859316469848,
+      "net_pct_per_year": 0.027401489867569594,
+      "errors": {
+        "prop1": 0.0,
+        "prop2": 0.0,
+        "prop3": 1.98544522836408e-16
+      }
+    }
+  ],
+  "seconds": 35.61291718482971
+}
