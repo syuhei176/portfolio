@@ -11,6 +11,7 @@ uv run --with numpy --with matplotlib python sim/simulate.py   # シミュレー
 python3 onchain/fetch.py v5 && python3 onchain/fetch.py v6       # Arbitrum からイベント取得（公開 RPC、十数分）
 uv run --with numpy --with matplotlib python onchain/analyze.py  # オンチェーンの図表を再生成
 latexmk -pdf main.tex
+cp main.pdf ../../public/papers/sqrt-perp.pdf                   # サイトで公開している PDF を更新
 ```
 
 ## 構成
