@@ -103,7 +103,12 @@ const writings: { title: string; link?: string; note?: string }[] = [
     title: "Uniswap v4をざっと見たメモ",
     link: "https://medium.com/@syuhei_hiya/uniswap-v4%E3%82%92%E3%81%96%E3%81%A3%E3%81%A8%E8%A6%8B%E3%81%9F-5c7084893556",
   },
-  { title: "Square root perpetual", link: "https://hackmd.io/@syuhei/SkT-vXWTi" },
+  {
+    title:
+      "Square-Root Perpetuals from Concentrated Liquidity: Range Rolling, Out-of-Range Residuals, and Funding",
+    link: "/papers/sqrt-perp.pdf",
+    note: "Draft, 2026",
+  },
   {
     title: "clooca : Web based tool for Domain Specific Modeling",
     link: "https://ceur-ws.org/Vol-1115/demo6.pdf",
