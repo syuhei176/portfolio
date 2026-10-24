@@ -91,8 +91,8 @@ export function CaseStudies({ onSelect }: { onSelect: (id: string) => void }) {
 
             {c.code && (
               <figure className="mt-8 max-w-[46rem]">
-                <div className="overflow-x-auto crt-screen border-2 border-gray-700">
-                  <pre className="relative z-10 p-4 text-[13px] md:text-sm leading-relaxed text-gray-200">
+                <div className="crt-screen border-2 border-gray-700">
+                  <pre className="relative z-10 overflow-x-auto p-4 text-[13px] md:text-sm leading-relaxed text-gray-200">
                     <code className="[font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace]">
                       {c.code.source}
                     </code>

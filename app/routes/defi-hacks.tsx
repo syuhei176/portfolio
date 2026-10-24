@@ -110,15 +110,21 @@ export default function DefiHacks() {
   useEffect(() => {
     if (!scrollTarget) return;
     const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    document
-      .getElementById(scrollTarget)
-      ?.scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "start" });
+    const item = document.getElementById(scrollTarget);
+    item?.scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "start" });
+    // キーボードやスクリーンリーダーの利用者も、開いた事件から読み進められるようにする
+    item?.querySelector("button")?.focus({ preventScroll: true });
     setScrollTarget(null);
   }, [scrollTarget]);
 
   // 初回表示時に URL のハッシュで指定された事件を開く
   useEffect(() => {
-    const id = decodeURIComponent(window.location.hash.slice(1));
+    let id: string;
+    try {
+      id = decodeURIComponent(window.location.hash.slice(1));
+    } catch {
+      return;
+    }
     if (incidents.some((i) => i.id === id)) select(id);
   }, []);
 
