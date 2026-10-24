@@ -11,6 +11,10 @@
   --color-retro-pink: #ec4899;
   --color-retro-yellow: #fbbf24;
   --color-retro-green: #10b981;
+
+  /* defi-hacks: root-cause groups (validated for CVD on #0f0f1e) */
+  --color-hack-code: #06a3c4;
+  --color-hack-ops: #e0457b;
 }
 
 html,
@@ -241,5 +245,35 @@ body {
   }
   50% {
     background-position: 100% 50%;
+  }
+}
+
+/* defi-hacks */
+.report-text {
+  font-family: 'BIZ UDPGothic', 'DotGothic16', sans-serif;
+  letter-spacing: 0.01em;
+}
+
+@keyframes block-drop {
+  from {
+    opacity: 0;
+    transform: translateY(-16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.chain-block {
+  animation: block-drop 0.32s steps(4) both;
+  box-shadow:
+    inset 3px 3px 0 rgba(255, 255, 255, 0.28),
+    inset -3px -3px 0 rgba(0, 0, 0, 0.35);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .chain-block {
+    animation: none;
   }
 }

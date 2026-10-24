@@ -4,4 +4,5 @@ export default [
   index("routes/home.tsx"),
   route("browser-detect", "routes/browser-detect.tsx"),
   route("wave", "routes/wave.tsx"),
+  route("defi-hacks", "routes/defi-hacks.tsx"),
 ] satisfies RouteConfig;
