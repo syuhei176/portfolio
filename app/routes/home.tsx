@@ -100,6 +100,11 @@ const videos = [
 
 const writings: { title: string; link?: string; note?: string }[] = [
   {
+    title: "DeFi・暗号資産ハッキング事件の分析と対策",
+    link: "/defi-hacks",
+    note: "The DAO から Bybit まで、主要な事件の手口・根本原因・対策の整理",
+  },
+  {
     title: "Uniswap v4をざっと見たメモ",
     link: "https://medium.com/@syuhei_hiya/uniswap-v4%E3%82%92%E3%81%96%E3%81%A3%E3%81%A8%E8%A6%8B%E3%81%9F-5c7084893556",
   },
